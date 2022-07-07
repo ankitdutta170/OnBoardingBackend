@@ -10,6 +10,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String email;
+    private String name;
+    private int age;
+    private long ph_no;
 
     public int getId() {
         return id;
@@ -51,9 +54,7 @@ public class User {
         this.ph_no = ph_no;
     }
 
-    private String name;
-    private int age;
-    private long ph_no;
+
 
     public User(){
 
